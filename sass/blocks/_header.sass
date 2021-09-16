@@ -1,13 +1,26 @@
 .navbar
   background-color: #fff
-&-top
-  display: flex
-  align-items: center
-  justify-content: space-between
-  padding: 40px 0
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 40px 0
+    &__menu-btn
+      display: none
   &__search
     margin-right: auto
     margin-left: 10%
+  &-menu
+    background-color: $dark
+    padding: 31px 0
+    .nav
+      display: flex
+      justify-content: space-between
+      &__item
+        color: $light
+        text-decoration: none
+        text-transform: uppercase
+        line-height: 18px
 .search
   display: flex
   position: relative

@@ -1,10 +1,10 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #333333;
 }
 
@@ -22,17 +22,42 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 40px 0;
+}
+
+.navbar-top__menu-btn {
+  display: none;
 }
 
 .navbar__search {
   margin-right: auto;
   margin-left: 10%;
+}
+
+.navbar-menu {
+  background-color: #0A223D;
+  padding: 31px 0;
+}
+
+.navbar-menu .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-menu .nav__item {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 18px;
 }
 
 .search {
@@ -48,7 +73,7 @@ body {
 .search__input {
   width: 350px;
   height: 100%;
-  background-color: #f5fafe;
+  background-color: #F5FAFE;
   border: none;
   font-size: 12px;
   line-height: 15px;
@@ -64,7 +89,7 @@ body {
   right: 0;
   top: 0;
   border: none;
-  background-color: #ec1f46;
+  background-color: #EC1F46;
 }
 
 .user {
@@ -73,8 +98,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .user__avatar {
@@ -82,7 +107,7 @@ body {
   height: 40px;
   border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .user__name {
@@ -137,7 +162,7 @@ h1 {
  */
 hr {
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -175,7 +200,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -323,7 +348,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -358,7 +383,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -431,5 +456,102 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .nav__item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+  .logo {
+    max-width: 132px;
+  }
+  .logo__image {
+    width: 100%;
+  }
+  .search {
+    max-width: 240px;
+    height: 35px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 510px;
+  }
+  .nav__item {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .logo {
+    max-width: 100px;
+  }
+  .logo__image {
+    width: 100%;
+  }
+  .search {
+    max-width: 200px;
+    height: 32px;
+    margin-left: auto;
+  }
+  .navbar-menu {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 300px;
+  }
+  .navbar__search {
+    display: none;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .user {
+    display: none;
+  }
+  .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 13px;
+    width: 16px;
+    border: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  .menu-btn__item {
+    width: 16px;
+    height: 1px;
+    background-color: #000;
+  }
 }
 /*# sourceMappingURL=style.css.map */
