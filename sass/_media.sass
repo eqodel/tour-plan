@@ -25,18 +25,8 @@
     height: 35px
     margin-left: auto
 
-  .hotel
-    &__wrapper
-      justify-content: space-between
-    &-info
-      &__rating
-        display: none
-      &__offer
-        order: -1
-        margin-left: 0
-
-  .stars
-    flex-basis: auto
+  .hotel-info__rating
+    display: none
 
 @media (max-width: 576px)
   .container
@@ -60,6 +50,17 @@
   .navbar-menu
     padding: 20px 0
 
+@media (max-width: 510px)
+  .hotel
+    &__wrapper
+      justify-content: space-between
+    &-info
+      &__offer
+        order: -1
+        margin-left: 0
+
+  .stars
+    flex-basis: auto
 @media (min-width: 320px) and (max-width: 480px)
   .container
     max-width: 92%
