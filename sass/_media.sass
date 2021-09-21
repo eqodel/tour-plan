@@ -1,6 +1,8 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .slider
+    width: 590px
 
 @media (max-width: 992px)
   .container
@@ -10,6 +12,15 @@
     &__item
       font-size: 12px
       line-height: 15px
+
+  .hotel
+    &-grid
+      flex-direction: column
+    &__slider
+      margin-bottom: 30px
+      width: 100%
+    &-after-slider
+      flex-direction: row
 
 @media (max-width: 768px)
   .container
@@ -27,6 +38,16 @@
 
   .hotel-info__rating
     display: none
+
+  .hotel
+    &-after-slider
+      flex-direction: column
+
+  .booking
+    width: 100%
+    margin-bottom: 30px
+  .map
+    width: 100%
 
 @media (max-width: 576px)
   .container
