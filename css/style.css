@@ -387,7 +387,7 @@ body {
   color: inherit;
 }
 
-.map {
+#map {
   width: 347px;
   height: 213px;
   border-radius: 10px;
@@ -800,7 +800,7 @@ template {
     width: 100%;
     margin-bottom: 30px;
   }
-  .map {
+  #map {
     width: 100%;
   }
 }
