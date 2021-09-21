@@ -149,6 +149,28 @@ body {
   padding-bottom: 70px;
 }
 
+.hotel-after-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .hotel-name {
   font-size: 24px;
 }
@@ -270,6 +292,106 @@ body {
 
 .slider-button--prev {
   left: 18px;
+}
+
+.booking {
+  font-family: 'Nunito', sans-serif;
+  width: 350px;
+  min-height: 210px;
+  border-radius: 8px;
+  padding: 28px;
+  background-color: #0A223D;
+  color: #fff;
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__call-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.person-room__item {
+  margin-bottom: 10px;
+}
+
+.person-room__img {
+  margin-right: 10px;
+}
+
+.price {
+  margin-bottom: 15px;
+}
+
+.price__start {
+  font-size: 10px;
+}
+
+.price__pricetag {
+  font-size: 24px;
+}
+
+.price__per-room {
+  font-size: 12px;
+}
+
+.call-center {
+  margin-bottom: 17px;
+}
+
+.call-center__quick {
+  font-size: 18px;
+}
+
+.call-center__img {
+  margin-right: 8px;
+}
+
+.call-center__num {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+}
+
+.booking__button {
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  padding: 13px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

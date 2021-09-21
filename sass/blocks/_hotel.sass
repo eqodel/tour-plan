@@ -2,6 +2,13 @@
   background-color: $bacground
   padding-top: 35px
   padding-bottom: 70px
+  &-after-slider
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &-grid
+    display: flex
+    justify-content: space-between
   &-name
     font-size: 24px
   &__wrapper
@@ -78,3 +85,63 @@
       right: 18px
     &--prev
       left: 18px
+
+.booking
+  font-family: 'Nunito', sans-serif
+  width: 350px
+  min-height: 210px
+  border-radius: 8px
+  padding: 28px
+  background-color: $dark
+  color: $light
+  &__info
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__price
+    display: flex
+    flex-direction: column
+  &__call-center
+    display: flex
+    justify-content: space-between
+
+.person-room
+  &__item
+    margin-bottom: 10px
+  &__img
+    margin-right: 10px
+
+.price
+  margin-bottom: 15px
+  &__start
+    font-size: 10px
+  &__pricetag
+    font-size: 24px
+  &__per-room
+    font-size: 12px
+
+.call-center
+  margin-bottom: 17px
+  &__quick
+    font-size: 18px
+  &__img
+    margin-right: 8px
+  &__num
+    text-decoration: none
+    color: inherit
+    font-size: 18px
+
+.booking__button
+  border: none
+  width: 100%
+  border-radius: 4px
+  background-color: $primary
+  padding: 13px
+  cursor: pointer
+  color: inherit
+
+.map
+  width: 347px
+  height: 213px
+  border-radius: 10px
+  overflow: hidden
