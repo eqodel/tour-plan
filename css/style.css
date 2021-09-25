@@ -1169,7 +1169,19 @@ template {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 739px) {
+  .card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 660px) {
+  .card {
+    width: 270px;
+  }
+}
+
+@media (max-width: 585px) {
   .container {
     max-width: 92%;
   }
