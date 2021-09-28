@@ -25,4 +25,9 @@ var hotelSlider = new Swiper('.hotel-slider', {
     enabled: true,
     onlyInViewport: false,
   },
+}); 
+
+var menuButton = document.querySelector(".menu-btn");
+menuButton.addEventListener("click", function () {
+  document.querySelector(".navbar-menu").classList.toggle('navbar-menu--visible');
 });

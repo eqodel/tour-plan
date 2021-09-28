@@ -24,19 +24,19 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search location">
           <button class="button search__button">
             <img src="img/search.svg" alt="search">
           </button>
         </form>
-        <a href="#" class="user">
+        <a href="#" class="user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="Avatar" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -53,6 +53,20 @@
     <div class="navbar-menu">
       <div class="container">
         <nav class="nav">
+          
+            <a href="#" class="nav__item user navbar__user--mobile--visible">
+              <img src="img/user-avatar.jpg" alt="Avatar" class="user__avatar">
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+
+         
+            <form action="#" class="nav__item search navbar__search navbar__search--mobile--visible">
+              <input type="text" class="search__input" placeholder="Search location">
+              <button class="button search__button">
+                <img src="img/search.svg" alt="search">
+              </button>
+            </form>
+
           <a href="#" class="nav__item">All Deals</a>
           <a href="#" class="nav__item">Hotels</a>
           <a href="#" class="nav__item">Activities</a>
@@ -163,7 +177,7 @@
       </div>
     </div>
   </section>
-  <section class="newsletter">
+  <section class="newsletter  class="parallax-window" data-parallax="scroll" data-image-src="../img/newsletter-bg.jpg"">
     <div class="newsletter-wrapper">
       <h3 class="newsletter-title">subscribe to our <strong class="newsletter-title__strong">Newsletter</strong></h3>
       <form action="#" class="subscribe newsletter__subscribe">
@@ -372,6 +386,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/path/to/parallax.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
