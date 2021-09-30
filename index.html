@@ -177,11 +177,11 @@
       </div>
     </div>
   </section>
-  <section class="newsletter  class="parallax-window" data-parallax="scroll" data-image-src="../img/newsletter-bg.jpg"">
+  <section class="newsletter">
     <div class="newsletter-wrapper">
       <h3 class="newsletter-title">subscribe to our <strong class="newsletter-title__strong">Newsletter</strong></h3>
-      <form action="#" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
         <button class="subscribe__button">Send</button>
       </form>
     </div>
