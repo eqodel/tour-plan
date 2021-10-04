@@ -53,9 +53,29 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog--visible');
   }
 
-  $(document).keydown(function(e) {
-  var code = e.keyCode || e.which;
-  if (code == 27) $(".modal").hide();
-});
+  $(document).on('keydown', function(e){
+      if(e.which === 27){ // key = esc (27)
+          modalOverlay.removeClass('modal__overlay--visible');
+          modalDialog.removeClass('modal__dialog--visible');
+      }
+  });
+
+
+  $('.form').each(function() {
+    $(this).validate({
+    messages: {
+    name: "Please specify your name *",
+    phone: "Please leave a phone number *",
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    }
+  }
+  });
+  });
+
+  $(document).ready(function(){
+    $('.phone').mask('+7 (999) 999-99-99');
+  });
 
 });
