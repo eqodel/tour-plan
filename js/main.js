@@ -28,6 +28,8 @@ $(document).ready(function () {
     },
   }); 
 
+  $('.parallax-window').parallax({imageSrc: 'img/newsletter-bg.jpg'});
+
   var menuButton = document.querySelector(".menu-btn");
   menuButton.addEventListener("click", function () {
     document.querySelector(".navbar-menu").classList.toggle('navbar-menu--visible');
@@ -53,8 +55,8 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog--visible');
   }
 
-  $(document).on('keydown', function(e){
-      if(e.which === 27){ // key = esc (27)
+  $(document).on('keydown', function(y){
+      if(y.which === 27){ // key = esc (27)
           modalOverlay.removeClass('modal__overlay--visible');
           modalDialog.removeClass('modal__dialog--visible');
       }

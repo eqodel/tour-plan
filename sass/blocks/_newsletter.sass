@@ -1,19 +1,5 @@
 .newsletter
   position: relative
-  padding: 98px 0 87px 0
-  background-image: url(../img/newsletter-bg.jpg)
-  background-repeat: no-repeat
-  background-size: cover
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    right: 0
-    bottom: 0
-    top: 0
-    width: 100%
-    height: 100%
-    background-color: rgba($dark, 0.8)
   &-wrapper
     position: relative
     max-width: 731px
@@ -21,6 +7,8 @@
     display: flex
     justify-content: space-between
     align-items: center
+    top: 50%
+    transform: translate(0, -50%)
   &-title
     color: $light
     font-style: Light
@@ -57,3 +45,17 @@
     background-color: $primary
     color: $light
     cursor: pointer
+
+.parallax-window
+  height: 260px
+  background: transparent
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.8)
