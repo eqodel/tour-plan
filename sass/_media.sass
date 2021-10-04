@@ -12,6 +12,46 @@
     &__input
       &-group
         flex-basis: 100%
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    &__item
+      grid-column: span 2
+    &__item:nth-child(1)
+      flex-direction: column
+      grid-column: span 4
+      width: 924px
+    &__img
+      width: 100%
+      height: 250px
+    &__text
+      width: 100%
+      &--first
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+    &__name
+      &--first
+        width: 100%
+        text-align: center
+        order: -2
+    &__info
+      &--first
+        order: -1
+        margin: auto
+    &__icon
+      &-wrapper
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+    &__stars
+      display: none
+    &__price
+      align-content: center
+      width: auto
+    &__button
+      &--first
+        width: 100%
 
 @media (max-width: 992px)
   .container, .newsletter-wrapper
@@ -80,6 +120,20 @@
         grid-column: span 5
         grid-row: 4
 
+  .packages
+    &-wrapper
+      grid-gap: 10px
+    &__item
+      height: 600px
+    &__item:nth-child(1)
+      width: 760px
+      height: 660px
+    &__price
+      width: 100%
+      padding-bottom: 50px
+    &__info
+      &--first
+        margin-left: 0
 @media (max-width: 876px)
   .modal
     &__send
@@ -87,6 +141,11 @@
       flex-direction: column
     &__info
       margin-top: 15px
+
+@media (max-width: 828px)
+  .packages
+    &__item:nth-child(1)
+      width: 100%
 @media (max-width: 768px)
   .container
     max-width: 92%
@@ -156,7 +215,15 @@
 @media (max-width: 660px)
   .card
     width: 270px
-
+  .packages
+    &__item
+      height: 550px
+    &__item:nth-child(1)
+      height: 700px
+    &__info
+      flex-basis: 50%
+    &__description
+      flex-basis: 50%
 @media (max-width: 585px)
   .container
     max-width: 92%
@@ -218,6 +285,16 @@
   .modal
     &__dialog
       padding: 15px 38px
+@media (max-width: 536px)
+  .packages
+    &__item
+      height: auto
+    &__text
+      padding: 0 21px 34px 36px
+    &__price
+      padding-bottom: 0
+    &__description
+      margin: 0
 @media (max-width: 510px)
   .hotel
     &__wrapper
@@ -229,6 +306,28 @@
 
   .stars
     flex-basis: auto
+
+@media (max-width: 396px)
+  .packages
+    &__img
+      height: 150px
+    &__name
+      font-size: 13px
+    &__text
+      padding: 0
+
+@media (max-width: 372px)
+  .packages
+    &__item
+      height: 500px
+      width: 96%
+    &__item:nth-child(1)
+      height: 630px
+      width: 96%
+    &__name
+      font-size: 15px
+
+@media (max-width: 32px)
 @media (min-width: 320px) and (max-width: 480px)
   .container
     max-width: 92%

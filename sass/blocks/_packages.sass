@@ -1,5 +1,5 @@
 .packages
-  padding: 40px 70px
+  padding: 40px 0 70px 0
   background-color: $bacground
   &__title
     text-transform: uppercase
@@ -8,7 +8,6 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat(3, minmax(min-content, 1fr))
-    grid-template-rows: repeat(2, minmax(min-content, 1fr))
     grid-gap: 30px
   &__item
     background-color: $dark
@@ -26,10 +25,12 @@
     font-size: 18px
     line-height: 23px
     color: $light
+    &--first
+
   &__text
     width: 300px
     color: $footer-text-color
-    padding: 30px 21px 34px 44px
+    padding: 30px 21px 34px 36px
     font-style: normal
     font-weight: normal
     font-size: 14px
@@ -44,10 +45,10 @@
     margin-top: 27px
     margin-bottom: 34px
   &__img
-    background-repeat: no-repeat
-    background-size: cover
     width: 350px
     height: 250px
+    object-fit: cover
+    object-position: center
     &--big
       width: 366px
       height: 100%
@@ -56,6 +57,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
     color: $light
   &__oldprice
     color: $light
@@ -64,6 +66,8 @@
     font-size: 14px
     line-height: 18px
     text-decoration: line-through
+    width: 100%
+
   &__newprice
     font-style: normal
     font-weight: bold
