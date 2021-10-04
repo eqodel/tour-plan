@@ -55,12 +55,15 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog--visible');
   }
 
-  $(document).on('keydown', function(y){
-      if(y.which === 27){ // key = esc (27)
-          modalOverlay.removeClass('modal__overlay--visible');
-          modalDialog.removeClass('modal__dialog--visible');
-      }
-  });
+
+
+  $(document).ready(function(){
+            $(this).keydown(function(eventObject){
+                if (eventObject.which == 27)
+                    $('.modal__overlay').removeClass('modal__overlay--visible');
+                    $('.modal__dialog').removeClass('modal__dialog--visible');
+            });
+        });
 
 
   $('.form').each(function() {
